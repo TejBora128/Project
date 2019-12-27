@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  overflow-x: hidden;
+  color: rgb(241, 238, 237);
+  font-family: "Flamenco", cursive;
+}
+header {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("images/book.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+.row {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.row1 {
+  max-width: 1180px;
+  margin: 6;
+}
+.logo {
+  height: 80px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.login {
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.reg {
+  position: absolute;
+  top: 15%;
+  left: 43%;
+  transfrom: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.marquee {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -40%);
+}
+
+.main-nav {
+  float: right;
+  margin-top: 40px;
+}
+.main-nav li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+}
+.main-nav li a {
+  padding: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+.main-nav li a:hover {
+  border-bottom: 2px solid #fff;
+}
+.main-content-header {
+  width: 1180px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+.btn-full {
+  background-color: transparent;
+  color: #fff;
+  margin-right: 15px;
+  border: 1px solid #fff;
+}
+.btn-full:hover {
+  background-color: #a39f9f;
+}
+.btn-nav {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.btn-nav:hover {
+  background-color: #d3d3d3;
+}
+.colorchange {
+  animation: colorchangecareer 1s infinite;
+}
+
+@keyframes colorchangecareer {
+  0% {
+    color: #8b0000;
+  }
+  25% {
+    color: #00008b;
+  }
+  50% {
+    color: #8a2be2;
+  }
+  100% {
+    color: #9932cc;
+  }
+}
